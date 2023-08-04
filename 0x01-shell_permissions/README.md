@@ -16,7 +16,7 @@ Task4
 touch hello				creates an empty file called hello
 
 Task5
-chmod ug+x,o+r  hello			creates an empty file called hello
+chmod ug+x,o+r  hello			Write a script that adds execute permission to the owner of the file hello.
 
 Task6
 chmod ug+x,o+r  hello	adds execute permission to the owner and the group owner, and read permission to other users, to the file hello.
@@ -26,19 +26,20 @@ chmod ugo+x hello	adds execution permission to the owner, the group owner and th
 
 
 Task8
-chmod 007 hello			sets the permission to the file hello.
+chmod 007 hello			sets the permission to the file hello as Owner: no permission at all,Group: no permission at all,Other users: all the permissions
 
 Task9
-chmod 753 hello			sets the mode of the file hello
+chmod 753 hello			sets the mode of the file hello to rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
 
 Task10
 chmod --reference=olleh hello	sets the mode of the file hello the same as olleh’s mode.
 
 
+Task11 
 chmod -R +X ..	adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users..
 
-Task11
-mkdir -m 751 my_dir	Create a script that creates a directory called my_dir with permissions 751 in the working directory.	
 Task12
+mkdir -m 751 my_dir	Create a script that creates a directory called my_dir with permissions 751 in the working directory.	
+Task13
 chgrp school hello			changes the group owner to school for the file helloworking directory.
 
